@@ -363,8 +363,6 @@ margin-right: 69px;
 }
 
 .button-subscribe {
-  width: 24px;
-  height: 24px;
   margin-left: 10px;
 }
 
@@ -416,15 +414,15 @@ margin-right: 69px;
 }
 
 .overlay {
-min-height: 600px;
-max-width: 1600px;
-margin-left: auto;
-margin-right: auto;
-background-image: linear-gradient( to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8) ), 
-url(../images/decorative-elements/Header-img.jpg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
+  min-height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient( to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8) ), 
+  url(../images/decorative-elements/Header-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+ background-size: cover;
 }
 
 .hero-title {
@@ -442,13 +440,35 @@ background-size: cover;
 
 /* Button */
 
-.button-primary {
+.button-primary1 {
   padding: 10px 32px;
-
   display: inline-block;
   border: 1px solid transparent;
   min-width: 200px;
   min-height: 50px;
+  color: var(--complementary-color);
+  background-color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: inline-block;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-primary {
+  margin-left: 12px;
+  padding: 10px 32px;
+
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  min-width: 200px;
+  height: 50px;
 
   color: var(--complementary-color);
   background-color: var(--accent-color);
@@ -457,12 +477,14 @@ background-size: cover;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: inline-block;
   letter-spacing: 0.06em;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   text-align: center;
+
+  cursor: pointer;
+  overflow: hidden;
 }
 
 
